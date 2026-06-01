@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="docs/assets/images/avatar.png" alt="Modern AI Engineer Roadmap avatar" width="160">
+  <img src="docs/assets/images/readme-hero.svg" alt="Modern AI Engineer Roadmap" width="100%">
 </div>
 
 # Modern AI Engineer Roadmap

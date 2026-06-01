@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420" role="img" aria-labelledby="title desc">
+  <title id="title">Modern AI Engineer Roadmap</title>
+  <desc id="desc">Full-width banner for the Modern AI Engineer Roadmap project.</desc>
+  <rect width="1280" height="420" rx="28" fill="#f8faf8"/>
+  <rect x="18" y="18" width="1244" height="384" rx="22" fill="#fffdf7" stroke="#0f766e" stroke-opacity="0.22" stroke-width="2"/>
+  <path d="M18 40c0-12 10-22 22-22h300v384H40c-12 0-22-10-22-22V40Z" fill="#0f766e"/>
+  <path d="M340 18h54L340 402V18Z" fill="#f59e0b" opacity="0.95"/>
+
+  <g transform="translate(88 82)">
+    <rect width="166" height="166" rx="28" fill="#10201d" opacity="0.25"/>
+    <rect x="14" y="14" width="138" height="138" rx="24" fill="#fff7ed"/>
+    <path d="M47 116V49h17v67H47Zm28 0 24-67h20l25 67h-19l-5-15H96l-5 15H75Zm27-30h14l-8-25-6 25Z" fill="#0f766e"/>
+    <path d="M50 139h80" stroke="#f59e0b" stroke-width="9" stroke-linecap="round"/>
+  </g>
+
+  <g fill="#fff7ed" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="16">
+    <text x="72" y="292">AI FOUNDATIONS</text>
+    <text x="72" y="322">LLMS AND AGENTS</text>
+    <text x="72" y="352">INFRA AND ZKML</text>
+  </g>
+  <g fill="#f59e0b">
+    <circle cx="54" cy="286" r="6"/>
+    <circle cx="54" cy="316" r="6"/>
+    <circle cx="54" cy="346" r="6"/>
+  </g>
+
+  <g transform="translate(418 84)" font-family="Inter, Arial, sans-serif">
+    <text x="0" y="64" fill="#10201d" font-size="58" font-weight="850">Modern AI Engineer Roadmap</text>
+    <text x="2" y="116" fill="#31534d" font-size="24" font-weight="500">From beginner foundations to production AI systems, agents, infra, security, and ZKML.</text>
+  </g>
+
+  <g transform="translate(420 238)" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="760">
+    <rect x="0" y="0" width="178" height="58" rx="8" fill="#e8f4f2" stroke="#0f766e" stroke-opacity="0.22"/>
+    <rect x="196" y="0" width="178" height="58" rx="8" fill="#fff3d7" stroke="#f59e0b" stroke-opacity="0.35"/>
+    <rect x="392" y="0" width="178" height="58" rx="8" fill="#eef2ff" stroke="#334155" stroke-opacity="0.18"/>
+    <rect x="588" y="0" width="178" height="58" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-opacity="0.18"/>
+    <text x="28" y="36" fill="#0f766e">Learn</text>
+    <text x="224" y="36" fill="#a16207">Build</text>
+    <text x="420" y="36" fill="#334155">Measure</text>
+    <text x="616" y="36" fill="#166534">Master</text>
+  </g>
+
+  <g transform="translate(420 338)">
+    <path d="M0 0h702" stroke="#0f766e" stroke-width="5" stroke-linecap="round" opacity="0.22"/>
+    <g fill="#fffdf7" stroke-width="5">
+      <circle cx="0" cy="0" r="13" stroke="#0f766e"/>
+      <circle cx="78" cy="0" r="13" stroke="#0f766e"/>
+      <circle cx="156" cy="0" r="13" stroke="#0f766e"/>
+      <circle cx="234" cy="0" r="13" stroke="#0f766e"/>
+      <circle cx="312" cy="0" r="13" stroke="#f59e0b"/>
+      <circle cx="390" cy="0" r="13" stroke="#f59e0b"/>
+      <circle cx="468" cy="0" r="13" stroke="#f59e0b"/>
+      <circle cx="546" cy="0" r="13" stroke="#334155"/>
+      <circle cx="624" cy="0" r="13" stroke="#334155"/>
+      <circle cx="702" cy="0" r="13" stroke="#334155"/>
+    </g>
+    <g fill="#10201d" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" text-anchor="middle">
+      <text x="0" y="39">0</text>
+      <text x="78" y="39">1</text>
+      <text x="156" y="39">2</text>
+      <text x="234" y="39">3</text>
+      <text x="312" y="39">4</text>
+      <text x="390" y="39">5</text>
+      <text x="468" y="39">6</text>
+      <text x="546" y="39">7</text>
+      <text x="624" y="39">8</text>
+      <text x="702" y="39">9+</text>
+    </g>
+  </g>
+</svg>
