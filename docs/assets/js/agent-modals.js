@@ -5,6 +5,10 @@
     return { simple: simple, example: example, practice: practice };
   }
 
+  function r(html) {
+    return { rich: html };
+  }
+
   var details = {
     "Basic Backend Development": d(
       "Backend development is the part of an app that runs behind the screen. It receives a request, checks it, does useful work, and sends back a clear result. Agents need this because most tools are normal backend functions.",
@@ -162,16 +166,66 @@
       "A model that is twice as expensive per token may still be cheaper if it solves the task in one step instead of five.",
       "Track model, tokens, latency, retries, tool calls, and whether the user got a correct answer."
     ),
-    "Temperature": d(
-      "Temperature is the creativity knob. Low temperature makes the model choose safer, more likely words. High temperature makes it explore more.",
-      "For extracting a date from a receipt, use low temperature. For brainstorming names for a club, use higher temperature.",
-      "Run the same prompt five times at low and high temperature and compare how much the answers change."
-    ),
-    "Top-p": d(
-      "Top-p limits the model to a group of likely next tokens. It is another way to control randomness.",
-      "If top-p is small, the model chooses from a narrow set of likely words. If it is large, it has more options.",
-      "Usually tune temperature or top-p, not both at the same time."
-    ),
+    "Temperature": r([
+      "<p>Temperature is a setting that changes how random or predictable an AI model's text output is. The value usually goes from 0 to 1, sometimes higher. A low temperature, close to 0, makes the model pick the most likely next word almost every time, so the answer is steady and safe but can feel dull or repetitive. A high temperature, like 0.9 or 1.0, lets the model explore less-likely word choices, which can give fresh and creative replies, but it may also add mistakes or drift off topic. By adjusting temperature, you balance reliability and creativity to fit the goal of your task.</p>",
+      "<h3>Example: same prompt, different temperatures</h3>",
+      "<p><strong>The prompt:</strong> &quot;Write the first sentence of a story about a dragon.&quot;</p>",
+      "<h4>Low Temperature (0.2) - The Safe Choice</h4>",
+      "<blockquote>Once upon a time, a large green dragon lived in a dark cave on top of a mountain.</blockquote>",
+      "<p><strong>Why it happened:</strong> The AI played it completely safe. It used the most common, predictable words you find in almost every fairy tale.</p>",
+      "<h4>Medium Temperature (0.5) - The Balanced Choice</h4>",
+      "<blockquote>Deep inside the Whispering Mountains, an ancient dragon guarded a treasure made of glowing blue crystals.</blockquote>",
+      "<p><strong>Why it happened:</strong> The AI added some color and style. It is still a normal dragon story, but it feels more interesting to read.</p>",
+      "<h4>High Temperature (1.0) - The Wild Choice</h4>",
+      "<blockquote>Barnaby was a terrible dragon because he sneezed soap bubbles instead of fire, which made the local knights look incredibly shiny.</blockquote>",
+      "<p><strong>Why it happened:</strong> The AI took a bigger risk. It moved away from the normal scary mountain dragon idea and created a funny, unexpected twist.</p>",
+      "<h3>Source links</h3>",
+      "<ul>",
+      '<li><a href="https://thenewstack.io/what-temperature-means-in-natural-language-processing-and-ai/">The New Stack: What Temperature Means in NLP and AI</a></li>',
+      '<li><a href="https://www.vellum.ai/llm-parameters/temperature">Vellum: Temperature parameter guide</a></li>',
+      '<li><a href="https://www.ibm.com/think/topics/llm-temperature">IBM Think: What is LLM Temperature?</a></li>',
+      '<li><a href="https://docsbot.ai/article/how-temperature-settings-transform-your-ai-agents-responses">DocsBot AI: Temperature settings and AI agent responses</a></li>',
+      "</ul>"
+    ].join("")),
+    "Top-p": r([
+      "<p>Top-p, also called nucleus sampling, is a setting that guides how an LLM picks its next word. The model lists many possible words and sorts them by probability. It then finds the smallest group of top words whose combined chance adds up to the chosen p value, such as 0.9. Only words inside this group stay in the running; the rest are dropped. The model picks one word from the kept group at random, weighted by the original chances. A lower p keeps only the very likely words, so output is safer and more focused. A higher p lets in less likely words, adding surprise and creativity but also more risk of error.</p>",
+      "<h3>Example: same football prompt, different settings</h3>",
+      "<p><strong>The prompt:</strong> &quot;Do you know who the best football player...&quot;</p>",
+      "<h4>Example 1: The Fact Checker</h4>",
+      "<p><strong>Settings:</strong> Temperature = 0.1, Top-p = 0.20.</p>",
+      "<p><strong>How the AI thinks:</strong> Top-p narrows the bucket down to only the most common names discussed in football history. Temperature keeps the AI from taking chances.</p>",
+      "<blockquote>...is? Most experts and fans agree that Lionel Messi and Cristiano Ronaldo are considered the best football players of the modern era, while Pele and Diego Maradona are the greatest legends of all time.</blockquote>",
+      "<p><strong>Verdict:</strong> Highly accurate and well-structured, but it reads like a standard encyclopedia entry.</p>",
+      "<h4>Example 2: The Sports Fan</h4>",
+      "<p><strong>Settings:</strong> Temperature = 0.7, Top-p = 0.85.</p>",
+      "<p><strong>How the AI thinks:</strong> Top-p keeps a larger bucket of words open, including opinions and colorful sports language. The higher temperature lets the AI choose a more conversational path.</p>",
+      "<blockquote>...in the world is right now? It depends on who you ask! If you value pure magic on the pitch, it's Lionel Messi. But if you are talking about the unstoppable goal-scoring machines of the new generation, players like Erling Haaland and Kylian Mbappe are rapidly taking over the throne.</blockquote>",
+      "<p><strong>Verdict:</strong> More fun to read. It feels like chatting with a real person at a sports game.</p>",
+      "<h4>Example 3: The Broken Radio</h4>",
+      "<p><strong>Settings:</strong> Temperature = 1.8, Top-p = 1.0.</p>",
+      "<p><strong>How the AI thinks:</strong> Top-p at 1.0 filters almost nothing out. The very high temperature pushes the AI toward strange, low-probability words.</p>",
+      "<blockquote>...player universe soccer shoe gravity? Crimson titanium stadium bouncing gravity running algorithm cleats spectacular Ronaldo concrete grass dinosaur touchdown!</blockquote>",
+      "<p><strong>Verdict:</strong> Total gibberish. The AI lost the plot because the settings allowed too much noise.</p>",
+      "<h3>Why these settings create different results</h3>",
+      "<p>Top-p cuts the choices first, and then temperature scrambles the remaining choices. That is why each pair behaves differently.</p>",
+      "<h4>Pair 1: The Fact Checker (Temp 0.1 + Top-p 0.20)</h4>",
+      "<p>Top-p keeps only a tiny group of obvious words, like Messi, Ronaldo, and greatest. Temperature then tells the AI to pick the safest word in that tiny group. The result is safe, boring, and factual.</p>",
+      "<h4>Pair 2: The Sports Fan (Temp 0.7 + Top-p 0.85)</h4>",
+      "<p>Top-p keeps many useful words available, including creative words like magic, unstoppable, or throne. Temperature lets the AI skip the most obvious word sometimes. The result stays on topic but can vary.</p>",
+      "<h4>Pair 3: The Broken Radio (Temp 1.8 + Top-p 1.0)</h4>",
+      "<p>Top-p filters almost nothing, and high temperature strongly encourages weird choices. The result can become nonsense.</p>",
+      "<h3>Rules of thumb</h3>",
+      "<ol>",
+      "<li><strong>Facts, math, or code:</strong> keep both low, such as Temperature 0.1 and Top-p 0.1.</li>",
+      "<li><strong>Creative writing or brainstorming:</strong> use medium-high settings, such as Temperature 0.7 and Top-p 0.9.</li>",
+      "<li><strong>Golden rule:</strong> do not turn temperature very high while Top-p is also 1.0, unless you intentionally want chaotic output.</li>",
+      "</ol>",
+      "<h3>Source links</h3>",
+      "<ul>",
+      '<li><a href="https://nn.labml.ai/sampling/nucleus.html">labml.ai: Nucleus Sampling</a></li>',
+      '<li><a href="https://community.openai.com/t/temperature-top-p-and-top-k-for-chatbot-responses/295542">OpenAI Community: Temperature, top_p and top_k for chatbot responses</a></li>',
+      "</ul>"
+    ].join("")),
     "Frequency Penalty": d(
       "Frequency penalty discourages the model from repeating words it has already used many times.",
       "In a long poem, it can reduce repeated phrases. In JSON, it might be harmful because repeated field names can be correct.",
@@ -1322,6 +1376,7 @@
       '    <h2 class="agent-term-dialog__title" id="agent-term-dialog-title"></h2>',
       '    <button class="agent-term-dialog__close" type="button" aria-label="Close explanation">&times;</button>',
       "  </div>",
+      '  <div data-agent-modal-basic>',
       '  <div class="agent-term-dialog__section">',
       '    <p class="agent-term-dialog__label">Simple idea</p>',
       '    <p class="agent-term-dialog__text" data-agent-modal-simple></p>',
@@ -1334,6 +1389,8 @@
       '    <p class="agent-term-dialog__label">Practice step</p>',
       '    <p class="agent-term-dialog__text" data-agent-modal-practice></p>',
       "  </div>",
+      "  </div>",
+      '  <div class="agent-term-dialog__rich" data-agent-modal-rich hidden></div>',
       '  <p class="agent-term-dialog__context" data-agent-modal-context></p>',
       "</div>"
     ].join("");
@@ -1357,11 +1414,22 @@
     var dialog = ensureDialog();
     var term = detailFor(label, row);
     var context = rowContext(row);
+    var basic = dialog.querySelector("[data-agent-modal-basic]");
+    var rich = dialog.querySelector("[data-agent-modal-rich]");
 
     dialog.querySelector("#agent-term-dialog-title").textContent = label;
-    dialog.querySelector("[data-agent-modal-simple]").textContent = term.simple;
-    dialog.querySelector("[data-agent-modal-example]").textContent = term.example;
-    dialog.querySelector("[data-agent-modal-practice]").textContent = term.practice;
+    if (term.rich) {
+      basic.hidden = true;
+      rich.hidden = false;
+      rich.innerHTML = term.rich;
+    } else {
+      basic.hidden = false;
+      rich.hidden = true;
+      rich.textContent = "";
+      dialog.querySelector("[data-agent-modal-simple]").textContent = term.simple;
+      dialog.querySelector("[data-agent-modal-example]").textContent = term.example;
+      dialog.querySelector("[data-agent-modal-practice]").textContent = term.practice;
+    }
     dialog.querySelector("[data-agent-modal-context]").textContent = context ? "Roadmap table: " + context : "";
 
     if (typeof dialog.showModal === "function" && !dialog.open) {
