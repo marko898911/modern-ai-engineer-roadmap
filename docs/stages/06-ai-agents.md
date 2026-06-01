@@ -9,68 +9,55 @@ tools, observe results, update memory, and continue toward a goal. The hard
 part is not making a model call a tool. The hard part is making the loop
 reliable, debuggable, secure, and useful.
 
-This stage incorporates the uploaded `ai-agents.pdf` roadmap: prerequisites,
-LLM fundamentals, prompt engineering, tools, MCP, memory, agent architectures,
-frameworks, evaluation, monitoring, and security.
+This stage follows the structure of the live [roadmap.sh AI Agents
+Roadmap](https://roadmap.sh/ai-agents), plus the uploaded `ai-agents.pdf`, but
+converts the visual roadmap into a student-friendly build path.
 
-## Learn
+## Sub-Stage Ladder
 
-| Area | What to understand |
-|---|---|
-| Agent loop | perception, reasoning/planning, action, observation, reflection |
-| Prompting | goal, context, constraints, examples, output format |
-| Tools | names, descriptions, schemas, error handling, permissions |
-| Function calling | structured tool invocation from model outputs |
-| MCP | hosts, clients, servers, tools, resources, prompts |
-| Memory | short-term context, long-term stores, semantic vs episodic memory |
-| Architectures | ReAct, planner-executor, DAG agents, multi-agent patterns |
-| Frameworks | LangGraph, LlamaIndex, AutoGen, CrewAI, OpenAI Agents SDK |
-| Evaluation | tool unit tests, trajectory tests, task success, human review |
-| Observability | traces, spans, tool logs, replay, cost and latency |
-| Security | prompt injection, tool misuse, sandboxing, PII, least privilege |
+| Sub-stage | Focus | Main output |
+|---|---|---|
+| [6.0 Prerequisites](06-ai-agents/00-prerequisites.md) | backend basics, Git, terminal, APIs | API-backed tool server |
+| [6.1 LLM Fundamentals](06-ai-agents/01-llm-fundamentals.md) | models, tokens, context, pricing, generation controls | LLM behavior notebook |
+| [6.2 Agents 101](06-ai-agents/02-agents-101.md) | agent loop and use cases | paper agent design |
+| [6.3 Prompt Engineering](06-ai-agents/03-prompt-engineering.md) | instructions, examples, formats, iteration | prompt test suite |
+| [6.4 Tools and Actions](06-ai-agents/04-tools-actions.md) | tool schemas, errors, permissions | three production-style tools |
+| [6.5 Agent Memory](06-ai-agents/05-agent-memory.md) | short-term, long-term, episodic, semantic memory | memory experiment |
+| [6.6 Architectures and MCP](06-ai-agents/06-architectures-mcp.md) | ReAct, planner-executor, DAG, MCP | architecture comparison |
+| [6.7 Building Agents](06-ai-agents/07-building-agents.md) | manual loop, function calling, frameworks | two working agents |
+| [6.8 Evaluation and Observability](06-ai-agents/08-evaluation-observability.md) | tests, metrics, tracing, monitoring | eval and trace dashboard |
+| [6.9 Security and Ethics](06-ai-agents/09-security-ethics.md) | injection, sandboxing, PII, bias, red teaming | agent threat model |
+| [6.10 Capstone](06-ai-agents/10-agent-capstone.md) | integrate everything | bounded production-style agent |
 
-## Build
+## What You Build Across This Stage
 
-Build two agents:
+You will build one agent system in layers:
 
-1. A manual agent loop from scratch using direct model calls and tool schemas.
-2. A framework-based agent with tracing, memory, and at least three tools.
+```text
+LLM call
+  -> structured output
+  -> one safe tool
+  -> multi-tool loop
+  -> memory
+  -> framework implementation
+  -> eval suite
+  -> traces and monitoring
+  -> security tests
+  -> capstone agent
+```
 
-The agent should solve a bounded workflow such as research assistance, repo
-triage, data analysis, calendar planning, or codebase Q&A.
+## Completion Standard
 
-## Measure
+By the end of Stage 6, you should have:
 
-Measure:
-
-- task success rate on 20 to 50 tasks
-- tool-call accuracy
-- invalid tool calls
-- average steps per task
-- latency and cost
-- prompt-injection failures
-- recovery from tool errors
-
-## Exit Criteria
-
-Move on when you can:
-
-- write an agent loop without a framework
-- define safe tool schemas and permissions
-- explain when memory helps and when it pollutes context
-- trace a failed agent run and identify the failing step
-- defend the agent against basic prompt injection and unsafe tool use
-
-## Build Order
-
-1. Direct API call with structured output.
-2. Single tool call.
-3. Multi-tool loop with max-step limit.
-4. Tool error recovery.
-5. RAG-backed memory.
-6. Framework implementation.
-7. Tracing and eval harness.
-8. Security tests.
+- a manual agent loop from scratch
+- a framework-based agent
+- at least three typed tools
+- short-term and long-term memory experiments
+- task evals with success/failure categories
+- structured traces
+- prompt-injection and tool-abuse tests
+- a clear README explaining architecture, tradeoffs, and limits
 
 ## Common Mistake
 
@@ -79,4 +66,5 @@ systems multiply unclear goals, hidden state, cost, latency, and failure modes.
 
 ## Next
 
-Continue to [Stage 7: Model Infrastructure](07-model-infrastructure.md).
+Start with [6.0 Prerequisites](06-ai-agents/00-prerequisites.md), then continue
+through the sub-stages in order.
