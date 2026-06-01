@@ -79,10 +79,126 @@
   font-size: 0.78rem;
 }
 
+.agent-term-button {
+  display: inline;
+  border: 0;
+  border-radius: 4px;
+  padding: 0;
+  background: transparent;
+  color: var(--md-typeset-a-color);
+  font: inherit;
+  font-weight: 700;
+  line-height: inherit;
+  text-align: left;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+  cursor: pointer;
+}
+
+.agent-term-button:hover {
+  color: var(--roadmap-teal);
+  text-decoration-style: solid;
+}
+
+.agent-term-button:focus-visible {
+  outline: 2px solid var(--roadmap-gold);
+  outline-offset: 0.14rem;
+}
+
+.agent-term-dialog {
+  width: min(92vw, 38rem);
+  max-height: min(84vh, 44rem);
+  border: 1px solid var(--roadmap-line);
+  border-radius: 8px;
+  padding: 0;
+  overflow: auto;
+  color: var(--md-default-fg-color);
+  background: var(--md-default-bg-color);
+  box-shadow: 0 1.2rem 3rem rgba(16, 32, 29, 0.28);
+}
+
+.agent-term-dialog::backdrop {
+  background: rgba(16, 32, 29, 0.48);
+}
+
+.agent-term-dialog__inner {
+  padding: 1.15rem;
+}
+
+.agent-term-dialog__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid var(--roadmap-line);
+  padding-bottom: 0.75rem;
+}
+
+.agent-term-dialog__title {
+  margin: 0;
+  color: var(--roadmap-ink);
+  font-size: 1.1rem;
+  line-height: 1.25;
+}
+
+[data-md-color-scheme="slate"] .agent-term-dialog__title {
+  color: var(--md-default-fg-color);
+}
+
+.agent-term-dialog__close {
+  flex: 0 0 auto;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--roadmap-line);
+  border-radius: 6px;
+  color: var(--md-default-fg-color);
+  background: rgba(15, 118, 110, 0.06);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.agent-term-dialog__close:hover {
+  background: rgba(15, 118, 110, 0.14);
+}
+
+.agent-term-dialog__section {
+  margin-top: 0.9rem;
+  border-left: 3px solid var(--roadmap-gold);
+  padding-left: 0.8rem;
+}
+
+.agent-term-dialog__label {
+  margin: 0 0 0.25rem;
+  color: var(--roadmap-teal);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.agent-term-dialog__text {
+  margin: 0;
+}
+
+.agent-term-dialog__context {
+  margin-top: 0.9rem;
+  border-top: 1px solid var(--roadmap-line);
+  padding-top: 0.75rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.78rem;
+}
+
 @media (max-width: 40rem) {
   .roadmap-hero__avatar {
     float: none;
     display: block;
     margin: 0 0 0.9rem;
+  }
+
+  .agent-term-dialog__inner {
+    padding: 1rem;
   }
 }
