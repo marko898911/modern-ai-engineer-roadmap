@@ -1,0 +1,101 @@
+site_name: Modern AI Engineer Roadmap
+site_url: https://aiZKP.github.io/modern-ai-engineer-roadmap/
+site_description: A beginner-to-master roadmap for modern AI engineering, covering AI fundamentals, LLMs, agents, model infrastructure, optimization, hardware acceleration, AI security, blockchain, and ZKML.
+site_author: aiZKP
+repo_url: https://github.com/aiZKP/modern-ai-engineer-roadmap
+repo_name: aiZKP/modern-ai-engineer-roadmap
+edit_uri: edit/main/docs/
+
+docs_dir: docs
+
+theme:
+  name: material
+  logo: assets/images/avatar.png
+  favicon: assets/images/avatar.png
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font: false
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+plugins:
+  - search
+
+extra_css:
+  - assets/css/custom.css
+
+nav:
+  - Home:
+    - Overview: index.md
+    - How to Use: how-to-use.md
+    - Roadmap Map: roadmap-map.md
+  - Stages:
+    - "0. Orientation": stages/00-orientation.md
+    - "1. Foundations": stages/01-foundations.md
+    - "2. Machine Learning": stages/02-machine-learning.md
+    - "3. Deep Learning": stages/03-deep-learning.md
+    - "4. LLMs": stages/04-llms.md
+    - "5. AI Applications": stages/05-ai-applications.md
+    - "6. AI Agents": stages/06-ai-agents.md
+    - "7. Model Infrastructure": stages/07-model-infrastructure.md
+    - "8. Optimization and Hardware": stages/08-optimization-hardware.md
+    - "9. Security, Blockchain, ZKML": stages/09-security-blockchain-zkml.md
+    - "10. Mastery": stages/10-mastery.md
+  - Tracks:
+    - Role Tracks: tracks/index.md
+  - Projects:
+    - Project Ladder: projects/project-ladder.md
+  - Resources:
+    - Sources and Study Notes: resources/sources.md
+    - Authoring Standard: meta/roadmap-authoring-standard.md
+    - Old Roadmap Analysis: meta/old-roadmap-analysis.md

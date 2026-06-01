@@ -1,0 +1,15 @@
+# Modern AI Engineer Roadmap
+
+This site is a beginner-to-master roadmap for modern AI engineering.
+
+Canonical URL: https://aiZKP.github.io/modern-ai-engineer-roadmap/
+Repository: https://github.com/aiZKP/modern-ai-engineer-roadmap
+
+Primary pages:
+
+- / - Overview
+- /how-to-use/ - How to walk the roadmap
+- /roadmap-map/ - Dependency map and role paths
+- /stages/00-orientation/ through /stages/10-mastery/ - stage-by-stage path
+- /projects/project-ladder/ - build artifacts and portfolio sequence
+- /resources/sources/ - sources studied and external references
