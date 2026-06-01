@@ -30,7 +30,6 @@ theme:
   font: false
   features:
     - navigation.tabs
-    - navigation.sections
     - navigation.indexes
     - navigation.top
     - navigation.footer
@@ -73,6 +72,9 @@ plugins:
 
 extra_css:
   - assets/css/custom.css
+
+extra_javascript:
+  - assets/js/agent-modals.js
 
 nav:
   - Home:
