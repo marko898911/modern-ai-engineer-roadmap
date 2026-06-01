@@ -86,7 +86,19 @@ nav:
     - "3. Deep Learning": stages/03-deep-learning.md
     - "4. LLMs": stages/04-llms.md
     - "5. AI Applications": stages/05-ai-applications.md
-    - "6. AI Agents": stages/06-ai-agents.md
+    - "6. AI Agents":
+      - Overview: stages/06-ai-agents.md
+      - "6.0 Prerequisites": stages/06-ai-agents/00-prerequisites.md
+      - "6.1 LLM Fundamentals": stages/06-ai-agents/01-llm-fundamentals.md
+      - "6.2 Agents 101": stages/06-ai-agents/02-agents-101.md
+      - "6.3 Prompt Engineering": stages/06-ai-agents/03-prompt-engineering.md
+      - "6.4 Tools and Actions": stages/06-ai-agents/04-tools-actions.md
+      - "6.5 Agent Memory": stages/06-ai-agents/05-agent-memory.md
+      - "6.6 Architectures and MCP": stages/06-ai-agents/06-architectures-mcp.md
+      - "6.7 Building Agents": stages/06-ai-agents/07-building-agents.md
+      - "6.8 Evaluation and Observability": stages/06-ai-agents/08-evaluation-observability.md
+      - "6.9 Security and Ethics": stages/06-ai-agents/09-security-ethics.md
+      - "6.10 Capstone": stages/06-ai-agents/10-agent-capstone.md
     - "7. Model Infrastructure": stages/07-model-infrastructure.md
     - "8. Optimization and Hardware": stages/08-optimization-hardware.md
     - "9. Security, Blockchain, ZKML": stages/09-security-blockchain-zkml.md
