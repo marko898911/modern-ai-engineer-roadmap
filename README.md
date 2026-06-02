@@ -36,6 +36,16 @@ modern-ai-engineer-roadmap/
 |   |-- how-to-use.md
 |   |-- roadmap-map.md
 |   |-- stages/
+|   |   |-- 6. AI Agents/
+|   |   |   |-- 6.0 Prerequisites/
+|   |   |   |   |-- Basic Knowledge/
+|   |   |   |   `-- ...
+|   |   |   |-- 6.1 LLM Fundamentals/
+|   |   |   |   |-- Agent Loop/
+|   |   |   |   `-- ...
+|   |   |   `-- 6.2 Prompt Engineering/
+|   |   |       |-- Overview/
+|   |   |       `-- Prompt Engineering Roadmap/
 |   |-- tracks/
 |   |-- projects/
 |   |-- resources/
@@ -43,6 +53,10 @@ modern-ai-engineer-roadmap/
 |   `-- assets/
 `-- .github/workflows/deploy-docs.yml
 ```
+
+Each stage, sub-stage, and part is a folder with its own `index.md`.
+Managers control the visible names in `mkdocs.yml`; contributors work inside
+the matching part folder.
 
 ## Local Preview
 

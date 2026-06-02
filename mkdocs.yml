@@ -82,29 +82,67 @@ nav:
     - How to Use: how-to-use.md
     - Roadmap Map: roadmap-map.md
   - Stages:
-    - "0. Orientation": stages/00-orientation.md
-    - "1. Foundations": stages/01-foundations.md
-    - "2. Machine Learning": stages/02-machine-learning.md
-    - "3. Deep Learning": stages/03-deep-learning.md
-    - "4. LLMs": stages/04-llms.md
-    - "5. AI Applications": stages/05-ai-applications.md
+    - "0. Orientation": "stages/0. Orientation/index.md"
+    - "1. Foundations": "stages/1. Foundations/index.md"
+    - "2. Machine Learning": "stages/2. Machine Learning/index.md"
+    - "3. Deep Learning": "stages/3. Deep Learning/index.md"
+    - "4. LLMs": "stages/4. LLMs/index.md"
+    - "5. AI Applications": "stages/5. AI Applications/index.md"
     - "6. AI Agents":
-      - Overview: stages/06-ai-agents.md
-      - "6.0 Prerequisites": stages/06-ai-agents/00-prerequisites.md
-      - "6.1 LLM Fundamentals": stages/06-ai-agents/01-llm-fundamentals.md
-      - "6.2 Agents 101": stages/06-ai-agents/02-agents-101.md
-      - "6.3 Prompt Engineering": stages/06-ai-agents/03-prompt-engineering.md
-      - "6.4 Tools and Actions": stages/06-ai-agents/04-tools-actions.md
-      - "6.5 Agent Memory": stages/06-ai-agents/05-agent-memory.md
-      - "6.6 Architectures and MCP": stages/06-ai-agents/06-architectures-mcp.md
-      - "6.7 Building Agents": stages/06-ai-agents/07-building-agents.md
-      - "6.8 Evaluation and Observability": stages/06-ai-agents/08-evaluation-observability.md
-      - "6.9 Security and Ethics": stages/06-ai-agents/09-security-ethics.md
-      - "6.10 Capstone": stages/06-ai-agents/10-agent-capstone.md
-    - "7. Model Infrastructure": stages/07-model-infrastructure.md
-    - "8. Optimization and Hardware": stages/08-optimization-hardware.md
-    - "9. Security, Blockchain, ZKML": stages/09-security-blockchain-zkml.md
-    - "10. Mastery": stages/10-mastery.md
+      - Overview: "stages/6. AI Agents/index.md"
+      - "6.0 Prerequisites":
+        - Overview: "stages/6. AI Agents/6.0 Prerequisites/index.md"
+        - "Basic Knowledge": "stages/6. AI Agents/6.0 Prerequisites/Basic Knowledge/index.md"
+        - "Transformer Models and LLMs": "stages/6. AI Agents/6.0 Prerequisites/Transformer Models and LLMs/index.md"
+        - "Model Families and Licenses": "stages/6. AI Agents/6.0 Prerequisites/Model Families and Licenses/index.md"
+        - "Understand the Basics": "stages/6. AI Agents/6.0 Prerequisites/Understand the Basics/index.md"
+      - "6.1 LLM Fundamentals":
+        - Overview: "stages/6. AI Agents/6.1 LLM Fundamentals/index.md"
+        - "Agent Loop": "stages/6. AI Agents/6.1 LLM Fundamentals/Agent Loop/index.md"
+        - "Tokenization": "stages/6. AI Agents/6.1 LLM Fundamentals/Tokenization/index.md"
+        - "Context Windows and Token Based Pricing": "stages/6. AI Agents/6.1 LLM Fundamentals/Context Windows and Token Based Pricing/index.md"
+        - "Temperature, Top-p, Top-k": "stages/6. AI Agents/6.1 LLM Fundamentals/Temperature, Top-p, Top-k/index.md"
+        - "Frequency and Presence Penalty": "stages/6. AI Agents/6.1 LLM Fundamentals/Frequency and Presence Penalty/index.md"
+        - "Stopping Criteria and Max Length": "stages/6. AI Agents/6.1 LLM Fundamentals/Stopping Criteria and Max Length/index.md"
+      - "6.2 Prompt Engineering":
+        - "Sub-stage Overview": "stages/6. AI Agents/6.2 Prompt Engineering/index.md"
+        - "Overview": "stages/6. AI Agents/6.2 Prompt Engineering/Overview/index.md"
+        - "Be Specific in What You Want": "stages/6. AI Agents/6.2 Prompt Engineering/Be Specific in What You Want/index.md"
+        - "Provide Additional Context": "stages/6. AI Agents/6.2 Prompt Engineering/Provide Additional Context/index.md"
+        - "Use Relevant Technical Terms": "stages/6. AI Agents/6.2 Prompt Engineering/Use Relevant Technical Terms/index.md"
+        - "Use Examples in Your Prompt": "stages/6. AI Agents/6.2 Prompt Engineering/Use Examples in Your Prompt/index.md"
+        - "Iterate and Test Your Prompts": "stages/6. AI Agents/6.2 Prompt Engineering/Iterate and Test Your Prompts/index.md"
+        - "Specify Length, Format, etc": "stages/6. AI Agents/6.2 Prompt Engineering/Specify Length, Format, etc/index.md"
+        - "Prompt Engineering Roadmap":
+          - Overview: "stages/6. AI Agents/6.2 Prompt Engineering/Prompt Engineering Roadmap/index.md"
+          - "LLMs and How They Work": "stages/6. AI Agents/6.2 Prompt Engineering/Prompt Engineering Roadmap/LLMs and How They Work/index.md"
+          - "What Is a Prompt": "stages/6. AI Agents/6.2 Prompt Engineering/Prompt Engineering Roadmap/What Is a Prompt/index.md"
+          - "What Is Prompt Engineering": "stages/6. AI Agents/6.2 Prompt Engineering/Prompt Engineering Roadmap/What Is Prompt Engineering/index.md"
+          - "LLM Providers": "stages/6. AI Agents/6.2 Prompt Engineering/Prompt Engineering Roadmap/LLM Providers/index.md"
+          - "Core LLM Concepts": "stages/6. AI Agents/6.2 Prompt Engineering/Prompt Engineering Roadmap/Core LLM Concepts/index.md"
+          - "LLM Configuration": "stages/6. AI Agents/6.2 Prompt Engineering/Prompt Engineering Roadmap/LLM Configuration/index.md"
+          - "Output Control": "stages/6. AI Agents/6.2 Prompt Engineering/Prompt Engineering Roadmap/Output Control/index.md"
+          - "Structured Outputs": "stages/6. AI Agents/6.2 Prompt Engineering/Prompt Engineering Roadmap/Structured Outputs/index.md"
+          - "Prompting Techniques": "stages/6. AI Agents/6.2 Prompt Engineering/Prompt Engineering Roadmap/Prompting Techniques/index.md"
+          - "Automatic Prompt Engineering": "stages/6. AI Agents/6.2 Prompt Engineering/Prompt Engineering Roadmap/Automatic Prompt Engineering/index.md"
+          - "Prompting Best Practices": "stages/6. AI Agents/6.2 Prompt Engineering/Prompt Engineering Roadmap/Prompting Best Practices/index.md"
+          - "Prompt Debiasing": "stages/6. AI Agents/6.2 Prompt Engineering/Prompt Engineering Roadmap/Prompt Debiasing/index.md"
+          - "Prompt Ensembling": "stages/6. AI Agents/6.2 Prompt Engineering/Prompt Engineering Roadmap/Prompt Ensembling/index.md"
+          - "LLM Self Evaluation": "stages/6. AI Agents/6.2 Prompt Engineering/Prompt Engineering Roadmap/LLM Self Evaluation/index.md"
+          - "Calibrating LLMs": "stages/6. AI Agents/6.2 Prompt Engineering/Prompt Engineering Roadmap/Calibrating LLMs/index.md"
+          - "Prompt Tuning": "stages/6. AI Agents/6.2 Prompt Engineering/Prompt Engineering Roadmap/Prompt Tuning/index.md"
+          - "Related Roadmaps": "stages/6. AI Agents/6.2 Prompt Engineering/Prompt Engineering Roadmap/Related Roadmaps/index.md"
+      - "6.3 Tools and Actions": "stages/6. AI Agents/6.3 Tools and Actions/index.md"
+      - "6.4 Agent Memory": "stages/6. AI Agents/6.4 Agent Memory/index.md"
+      - "6.5 Architectures and MCP": "stages/6. AI Agents/6.5 Architectures and MCP/index.md"
+      - "6.6 Building Agents": "stages/6. AI Agents/6.6 Building Agents/index.md"
+      - "6.7 Evaluation and Observability": "stages/6. AI Agents/6.7 Evaluation and Observability/index.md"
+      - "6.8 Security and Ethics": "stages/6. AI Agents/6.8 Security and Ethics/index.md"
+      - "6.9 Capstone": "stages/6. AI Agents/6.9 Capstone/index.md"
+    - "7. Model Infrastructure": "stages/7. Model Infrastructure/index.md"
+    - "8. Optimization and Hardware": "stages/8. Optimization and Hardware/index.md"
+    - "9. Security, Blockchain, ZKML": "stages/9. Security, Blockchain, ZKML/index.md"
+    - "10. Mastery": "stages/10. Mastery/index.md"
   - Tracks:
     - Role Tracks: tracks/index.md
   - Projects:

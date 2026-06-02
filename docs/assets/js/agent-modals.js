@@ -1195,8 +1195,8 @@
       "A capstone README should say which model you used and why.",
       "Document context budget, generation settings, and cost estimate."
     ),
-    "Agents 101": d(
-      "Agents 101 is the basic loop and reason for using an agent.",
+    "Agent Loop": d(
+      "Agent loop is the basic cycle and reason for using an agent.",
       "Your capstone should explain why this task needs steps and tools instead of one prompt.",
       "Name the loop, stop condition, and success condition."
     ),
@@ -1445,7 +1445,8 @@
   }
 
   function shouldEnhancePage() {
-    return window.location.pathname.indexOf("/stages/06-ai-agents") !== -1;
+    const path = decodeURIComponent(window.location.pathname);
+    return path.indexOf("/stages/6. AI Agents") !== -1;
   }
 
   function enhanceTables() {

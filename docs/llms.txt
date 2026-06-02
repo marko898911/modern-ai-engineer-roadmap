@@ -10,6 +10,6 @@ Primary pages:
 - / - Overview
 - /how-to-use/ - How to walk the roadmap
 - /roadmap-map/ - Dependency map and role paths
-- /stages/00-orientation/ through /stages/10-mastery/ - stage-by-stage path
+- /stages/0. Orientation/ through /stages/10. Mastery/ - stage-by-stage path
 - /projects/project-ladder/ - build artifacts and portfolio sequence
 - /resources/sources/ - sources studied and external references
