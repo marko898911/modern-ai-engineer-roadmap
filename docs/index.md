@@ -26,17 +26,17 @@ The roadmap has one main path and several specialist tracks.
 
 | Level | Stage | Main question | Artifact |
 |---|---|---|---|
-| Beginner | [0. Orientation](stages/00-orientation.md) | What is AI engineering? | learning log and setup |
-| Beginner | [1. Foundations](stages/01-foundations.md) | Can I program, reason, and use data? | Python data project |
-| Beginner | [2. Machine Learning](stages/02-machine-learning.md) | Can I train and evaluate classic models? | ML baseline report |
-| Builder | [3. Deep Learning](stages/03-deep-learning.md) | Can I build neural networks in PyTorch? | trained neural model |
-| Builder | [4. LLMs](stages/04-llms.md) | Do I understand tokens, transformers, and generation? | LLM notebook |
-| Builder | [5. AI Applications](stages/05-ai-applications.md) | Can I build reliable RAG and AI apps? | evaluated RAG app |
-| Advanced | [6. AI Agents](stages/06-ai-agents.md) | Can I build tool-using agents safely? | agent loop with tools |
-| Advanced | [7. Model Infrastructure](stages/07-model-infrastructure.md) | Can I run model systems like software systems? | deployed model service |
-| Advanced | [8. Optimization and Hardware](stages/08-optimization-hardware.md) | Can I make inference faster and cheaper? | benchmark and optimization report |
-| Specialist | [9. Security, Blockchain, ZKML](stages/09-security-blockchain-zkml.md) | Can I secure and verify AI systems? | threat model and ZKML proof |
-| Master | [10. Mastery](stages/10-mastery.md) | Can I own a full AI system end to end? | capstone portfolio |
+| Beginner | [0. Orientation](<stages/0. Orientation/index.md>) | What is AI engineering? | learning log and setup |
+| Beginner | [1. Foundations](<stages/1. Foundations/index.md>) | Can I program, reason, and use data? | Python data project |
+| Beginner | [2. Machine Learning](<stages/2. Machine Learning/index.md>) | Can I train and evaluate classic models? | ML baseline report |
+| Builder | [3. Deep Learning](<stages/3. Deep Learning/index.md>) | Can I build neural networks in PyTorch? | trained neural model |
+| Builder | [4. LLMs](<stages/4. LLMs/index.md>) | Do I understand tokens, transformers, and generation? | LLM notebook |
+| Builder | [5. AI Applications](<stages/5. AI Applications/index.md>) | Can I build reliable RAG and AI apps? | evaluated RAG app |
+| Advanced | [6. AI Agents](<stages/6. AI Agents/index.md>) | Can I build tool-using agents safely? | agent loop with tools |
+| Advanced | [7. Model Infrastructure](<stages/7. Model Infrastructure/index.md>) | Can I run model systems like software systems? | deployed model service |
+| Advanced | [8. Optimization and Hardware](<stages/8. Optimization and Hardware/index.md>) | Can I make inference faster and cheaper? | benchmark and optimization report |
+| Specialist | [9. Security, Blockchain, ZKML](<stages/9. Security, Blockchain, ZKML/index.md>) | Can I secure and verify AI systems? | threat model and ZKML proof |
+| Master | [10. Mastery](<stages/10. Mastery/index.md>) | Can I own a full AI system end to end? | capstone portfolio |
 
 ## The Four Lanes
 
