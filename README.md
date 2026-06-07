@@ -12,6 +12,8 @@ The live site is intended for GitHub Pages:
 
 https://aiZKP.github.io/modern-ai-engineer-roadmap/
 
+Repository: https://github.com/marko898911/modern-ai-engineer-roadmap
+
 ## What Makes This Roadmap Different
 
 This roadmap is designed to be walked, not admired from far away.

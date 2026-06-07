@@ -2,8 +2,8 @@ site_name: Modern AI Engineer Roadmap
 site_url: https://aiZKP.github.io/modern-ai-engineer-roadmap/
 site_description: A beginner-to-master roadmap for modern AI engineering, covering AI fundamentals, LLMs, agents, model infrastructure, optimization, hardware acceleration, AI security, blockchain, and ZKML.
 site_author: aiZKP
-repo_url: https://github.com/aiZKP/modern-ai-engineer-roadmap
-repo_name: aiZKP/modern-ai-engineer-roadmap
+repo_url: https://github.com/marko898911/modern-ai-engineer-roadmap
+repo_name: marko898911/modern-ai-engineer-roadmap
 edit_uri: edit/main/docs/
 
 docs_dir: docs
